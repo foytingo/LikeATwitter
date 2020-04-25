@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="peu-x4-kuy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="ahh-vl-maU">
+            <objects>
+                <viewController id="meY-Pa-bSz" customClass="LoginVC" customModule="LikeATwitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hzu-gE-ikk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_Logo_Orange" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-P6-p0t">
+                                <rect key="frame" x="144.5" y="114" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="W8T-0W-9Qz"/>
+                                    <constraint firstAttribute="height" constant="125" id="twO-Sa-zWm"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Az2-61-x1B" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                <rect key="frame" x="35" y="289" width="344" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sXM-e5-ALC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="envelope" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email adress"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                        <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip9-Rl-DmH" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                <rect key="frame" x="35" y="363" width="344" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UwI-eA-M7Z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="lock" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                        <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnc-B3-1od">
+                                <rect key="frame" x="50" y="453" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8df-4X-kyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="meY-Pa-bSz" eventType="touchUpInside" id="yGe-60-Jd3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYQ-8E-gRa">
+                                <rect key="frame" x="82" y="819" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ZIL-ys-x2j"/>
+                                    <constraint firstAttribute="width" constant="250" id="mgN-bw-hLh"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Don't have a account? ">
+                                            <attributes>
+                                                <color key="NSColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Sign up!">
+                                            <attributes>
+                                                <color key="NSColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="PYK-KL-Ecs" kind="show" identifier="goToRegisterVC" id="9cb-yE-mrP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cYQ-8E-gRa" firstAttribute="centerX" secondItem="Hzu-gE-ikk" secondAttribute="centerX" id="4Co-e2-jhG"/>
+                            <constraint firstItem="kCB-HL-jQF" firstAttribute="trailing" secondItem="gnc-B3-1od" secondAttribute="trailing" constant="50" id="8SG-tR-dp7"/>
+                            <constraint firstItem="gnc-B3-1od" firstAttribute="top" secondItem="ip9-Rl-DmH" secondAttribute="bottom" constant="40" id="BzB-KN-nnw"/>
+                            <constraint firstItem="kCB-HL-jQF" firstAttribute="trailing" secondItem="ip9-Rl-DmH" secondAttribute="trailing" constant="35" id="CoQ-0Z-qwL"/>
+                            <constraint firstItem="kCB-HL-jQF" firstAttribute="trailing" secondItem="Az2-61-x1B" secondAttribute="trailing" constant="35" id="DCw-LW-Pg6"/>
+                            <constraint firstItem="Az2-61-x1B" firstAttribute="leading" secondItem="kCB-HL-jQF" secondAttribute="leading" constant="35" id="TNi-lu-ddX"/>
+                            <constraint firstItem="wc3-P6-p0t" firstAttribute="centerX" secondItem="Hzu-gE-ikk" secondAttribute="centerX" id="Yhs-4H-E8a"/>
+                            <constraint firstItem="gnc-B3-1od" firstAttribute="leading" secondItem="kCB-HL-jQF" secondAttribute="leading" constant="50" id="ZWt-Lj-76i"/>
+                            <constraint firstItem="cYQ-8E-gRa" firstAttribute="bottom" secondItem="kCB-HL-jQF" secondAttribute="bottom" constant="-8" id="ePy-kK-i4s"/>
+                            <constraint firstItem="ip9-Rl-DmH" firstAttribute="top" secondItem="Az2-61-x1B" secondAttribute="bottom" constant="24" id="fx7-Bp-hyw"/>
+                            <constraint firstItem="Az2-61-x1B" firstAttribute="top" secondItem="wc3-P6-p0t" secondAttribute="bottom" constant="50" id="jhk-kx-aXg"/>
+                            <constraint firstItem="wc3-P6-p0t" firstAttribute="top" secondItem="kCB-HL-jQF" secondAttribute="top" constant="70" id="m2U-rG-vg3"/>
+                            <constraint firstItem="ip9-Rl-DmH" firstAttribute="leading" secondItem="kCB-HL-jQF" secondAttribute="leading" constant="35" id="xKz-bv-FAv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kCB-HL-jQF"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GZn-vb-Woz" appends="YES" id="cqJ-TI-t9E"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="mx0-Yz-hKs"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Az2-61-x1B" id="zuK-8o-ZMw"/>
+                        <outlet property="passwordTextField" destination="ip9-Rl-DmH" id="QWc-b2-uZd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VjJ-Aa-V3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GZn-vb-Woz">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="meY-Pa-bSz" id="TDm-ry-DR7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="FBh-ly-KnL">
+            <objects>
+                <viewController id="PYK-KL-Ecs" customClass="RegisterVC" customModule="LikeATwitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ju0-my-jlf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-ja-Cq1">
+                                <rect key="frame" x="35" y="229" width="344" height="346"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp1-9h-ivE" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3AA-05-CXR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Username"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="person" catalog="system"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXS-fk-mqg" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="344" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="T4b-88-SBP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Full name"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="person" catalog="system"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BO-b5-Yp6" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="148" width="344" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6cZ-fQ-1UF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="envelope" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email adress"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbs-Lr-HEw" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="222" width="344" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4LS-WH-F7u"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="lock" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjr-Cx-chr" customClass="TextFieldView" customModule="LikeATwitter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="296" width="344" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bub-08-k24"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="lock" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm password"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="themeColor">
+                                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="346" id="bL7-Bg-MFZ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8p-ni-j74">
+                                <rect key="frame" x="50" y="615" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VQT-QA-6SI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonAction:" destination="PYK-KL-Ecs" eventType="touchUpInside" id="0ZZ-3O-tXr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAL-hf-yJZ">
+                                <rect key="frame" x="85.5" y="820.5" width="243" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="UTV-Wz-l9g"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Do you have a account? ">
+                                            <attributes>
+                                                <color key="NSColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Login!">
+                                            <attributes>
+                                                <color key="NSColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="haveAccountButtonAction:" destination="PYK-KL-Ecs" eventType="touchUpInside" id="LhE-tU-bjb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db7-xK-K1q">
+                                <rect key="frame" x="132" y="64" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="db7-xK-K1q" secondAttribute="height" multiplier="1:1" id="7SW-Zk-hUZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="addPhotoOrange"/>
+                                <connections>
+                                    <action selector="addPhotoButtonAction:" destination="PYK-KL-Ecs" eventType="touchUpInside" id="4uq-wq-KKg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="db7-xK-K1q" firstAttribute="leading" secondItem="X9n-Vg-pAh" secondAttribute="leading" constant="132" id="7uC-Oq-gvb"/>
+                            <constraint firstItem="DAL-hf-yJZ" firstAttribute="bottom" secondItem="X9n-Vg-pAh" secondAttribute="bottom" constant="-8" id="CPZ-dY-EKM"/>
+                            <constraint firstItem="db7-xK-K1q" firstAttribute="top" secondItem="X9n-Vg-pAh" secondAttribute="top" constant="20" id="Jx9-EX-0nN"/>
+                            <constraint firstItem="X9n-Vg-pAh" firstAttribute="trailing" secondItem="db7-xK-K1q" secondAttribute="trailing" constant="132" id="U1c-G5-fcG"/>
+                            <constraint firstItem="A8p-ni-j74" firstAttribute="top" secondItem="bg0-ja-Cq1" secondAttribute="bottom" constant="40" id="UvU-BO-gNR"/>
+                            <constraint firstItem="DAL-hf-yJZ" firstAttribute="centerX" secondItem="ju0-my-jlf" secondAttribute="centerX" id="VMn-K4-NcX"/>
+                            <constraint firstItem="A8p-ni-j74" firstAttribute="leading" secondItem="X9n-Vg-pAh" secondAttribute="leading" constant="50" id="WL6-tr-66J"/>
+                            <constraint firstItem="bg0-ja-Cq1" firstAttribute="leading" secondItem="X9n-Vg-pAh" secondAttribute="leading" constant="35" id="f7g-0S-mzw"/>
+                            <constraint firstItem="db7-xK-K1q" firstAttribute="centerX" secondItem="ju0-my-jlf" secondAttribute="centerX" id="g3F-fZ-y0I"/>
+                            <constraint firstItem="X9n-Vg-pAh" firstAttribute="trailing" secondItem="A8p-ni-j74" secondAttribute="trailing" constant="50" id="lHc-Pd-ihe"/>
+                            <constraint firstItem="X9n-Vg-pAh" firstAttribute="trailing" secondItem="bg0-ja-Cq1" secondAttribute="trailing" constant="35" id="ncm-lC-Kz7"/>
+                            <constraint firstItem="bg0-ja-Cq1" firstAttribute="top" secondItem="db7-xK-K1q" secondAttribute="bottom" constant="15" id="vdo-jp-v6d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X9n-Vg-pAh"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ihe-Wu-CZt" appends="YES" id="nVv-m1-dve"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="oLG-Nl-VGn"/>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="db7-xK-K1q" id="Avp-17-okI"/>
+                        <outlet property="confirmPasswordTextField" destination="Jjr-Cx-chr" id="X3a-PP-GNL"/>
+                        <outlet property="emailTextField" destination="2BO-b5-Yp6" id="wHx-Ce-CTi"/>
+                        <outlet property="fullNameTextField" destination="UXS-fk-mqg" id="3fK-Q2-xOK"/>
+                        <outlet property="passwordTextField" destination="sbs-Lr-HEw" id="uDo-9o-uHo"/>
+                        <outlet property="usernameTextField" destination="Dp1-9h-ivE" id="oNl-sw-swW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPt-V2-2IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ihe-Wu-CZt">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="PYK-KL-Ecs" id="xIl-32-but"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2075.36231884058" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LOE-pn-L5g">
+            <objects>
+                <navigationController storyboardIdentifier="AuthSB" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="peu-x4-kuy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5qG-vG-xLX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="meY-Pa-bSz" kind="relationship" relationship="rootViewController" id="eKT-hZ-LHO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYF-nk-Gof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Twitter_Logo_Orange" width="133" height="133"/>
+        <image name="addPhotoOrange" width="100" height="100"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>

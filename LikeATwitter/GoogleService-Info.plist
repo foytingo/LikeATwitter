@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>442722103982-skl49c8akb4iq26eib8pf1tv0vq0u6ms.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.442722103982-skl49c8akb4iq26eib8pf1tv0vq0u6ms</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCC1_115Qqiw3j1Gji8tBvXu8V4mhfZLwA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>442722103982</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.foytingo.LikeATwitter</string>
+	<key>PROJECT_ID</key>
+	<string>likeatwitterproject</string>
+	<key>STORAGE_BUCKET</key>
+	<string>likeatwitterproject.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:442722103982:ios:0ea89e6b94333bc729333f</string>
+	<key>DATABASE_URL</key>
+	<string>https://likeatwitterproject.firebaseio.com</string>
+</dict>
+</plist>

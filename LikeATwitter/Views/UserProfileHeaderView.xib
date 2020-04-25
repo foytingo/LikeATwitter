@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserProfileHeaderView" customModule="LikeATwitter" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="i5i-GJ-lSk" id="gVD-EF-Zx1"/>
+                <outlet property="avatarImage" destination="fxT-0k-RKE" id="AYD-kc-EGN"/>
+                <outlet property="followerCount" destination="LPy-iC-qmJ" id="aPs-hJ-Rlg"/>
+                <outlet property="followingCount" destination="E59-C6-GRS" id="b8z-wX-DFR"/>
+                <outlet property="fullNameLabel" destination="UAw-Cw-mMN" id="UR8-39-vu2"/>
+                <outlet property="segmentControl" destination="kXE-H9-tJ3" id="I37-nv-yGF"/>
+                <outlet property="usernameLabel" destination="7rH-UP-PU5" id="NJm-jc-L21"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cDC-Uq-WXM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-RQ-XT5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="64T-k6-LNw"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="fxT-0k-RKE">
+                    <rect key="frame" x="20" y="35" width="92" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="UkT-Ir-8Vc"/>
+                        <constraint firstAttribute="height" constant="92" id="jdX-fr-eKq"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-am-osv">
+                    <rect key="frame" x="20" y="135" width="374" height="77"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Murat Baykor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-Cw-mMN">
+                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="26.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@foytingo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rH-UP-PU5">
+                            <rect key="frame" x="0.0" y="30.5" width="71" height="19"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YEL-Xg-ib4">
+                            <rect key="frame" x="0.0" y="57" width="209.5" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="852" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPy-iC-qmJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="27" height="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9J-eI-hdH">
+                                    <rect key="frame" x="33" y="0.0" width="69" height="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="455" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E59-C6-GRS">
+                                    <rect key="frame" x="108" y="0.0" width="27" height="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5d-Yf-qAm">
+                                    <rect key="frame" x="141" y="0.0" width="68.5" height="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="ku3-lC-8aH"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="e2o-oJ-4NH"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-GJ-lSk">
+                    <rect key="frame" x="294" y="82" width="100" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2y7-RM-ZEV"/>
+                        <constraint firstAttribute="width" constant="100" id="JsW-Sm-7ZZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonAction:" destination="-1" eventType="touchUpInside" id="b0i-cQ-3E3"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-H9-tJ3">
+                    <rect key="frame" x="0.0" y="220" width="414" height="33"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <segments>
+                        <segment title="Tweets"/>
+                        <segment title="Likes"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="segmentControlAction:" destination="-1" eventType="valueChanged" id="dh9-wM-7Vn"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fxT-0k-RKE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="5B0-E1-WwG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tfe-am-osv" secondAttribute="trailing" constant="20" id="9CZ-9w-yaJ"/>
+                <constraint firstItem="fd0-RQ-XT5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D4m-gE-VFm"/>
+                <constraint firstItem="Tfe-am-osv" firstAttribute="top" secondItem="fxT-0k-RKE" secondAttribute="bottom" constant="8" id="KMr-Y7-TsO"/>
+                <constraint firstItem="fd0-RQ-XT5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="RuO-3e-tiI"/>
+                <constraint firstItem="kXE-H9-tJ3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TZq-iq-Ccq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kXE-H9-tJ3" secondAttribute="bottom" constant="8" id="WzT-5z-qFN"/>
+                <constraint firstItem="fd0-RQ-XT5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XsS-aH-oOg"/>
+                <constraint firstItem="Tfe-am-osv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="aju-XR-zXI"/>
+                <constraint firstItem="kXE-H9-tJ3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ncL-UB-gBm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i5i-GJ-lSk" secondAttribute="trailing" constant="20" id="ske-v2-MJU"/>
+                <constraint firstItem="i5i-GJ-lSk" firstAttribute="top" secondItem="fd0-RQ-XT5" secondAttribute="bottom" constant="12" id="vOU-K3-Oab"/>
+                <constraint firstItem="fxT-0k-RKE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="w2j-Zf-GF7"/>
+                <constraint firstItem="kXE-H9-tJ3" firstAttribute="top" secondItem="Tfe-am-osv" secondAttribute="bottom" constant="8" id="xt9-l6-Yj7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="31.884057971014496" y="-101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatarPlaceHolder" width="100" height="100"/>
+    </resources>
+</document>
