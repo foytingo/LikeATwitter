@@ -63,7 +63,6 @@ class FeedVC: DataLoadingVC {
     }
     
     func fetchTweets() {
-        
         showLoadingView()
         TweetManager.shared.fetchTweets { (tweets) in
             self.tableView.refreshControl?.endRefreshing()

@@ -199,6 +199,26 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		46A8870A24547C420096C7F4 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				464A0595245191660084E5D9 /* Cells */,
+				468099D424503E1B00F1D4B0 /* Buttons */,
+				4619490E244E66340005ADBD /* Views */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		46A8870B24547C530096C7F4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				46F8BA21244CF835000207BB /* Assets.xcassets */,
+				46F8BA1A244CF832000207BB /* SceneDelegate.swift */,
+				46F8BA18244CF832000207BB /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		46F8BA0C244CF832000207BB = {
 			isa = PBXGroup;
 			children = (
@@ -220,17 +240,13 @@
 		46F8BA17244CF832000207BB /* LikeATwitter */ = {
 			isa = PBXGroup;
 			children = (
-				464A0595245191660084E5D9 /* Cells */,
+				46A8870A24547C420096C7F4 /* Custom Views */,
 				468F6A80245044D100C08827 /* Utilities */,
 				468F6A7D245044C300C08827 /* Managers */,
 				468F6A7A2450443100C08827 /* Models */,
 				46194910244E66450005ADBD /* Storyboards */,
 				4619490F244E663D0005ADBD /* Controllers */,
-				468099D424503E1B00F1D4B0 /* Buttons */,
-				4619490E244E66340005ADBD /* Views */,
-				46F8BA21244CF835000207BB /* Assets.xcassets */,
-				46F8BA1A244CF832000207BB /* SceneDelegate.swift */,
-				46F8BA18244CF832000207BB /* AppDelegate.swift */,
+				46A8870B24547C530096C7F4 /* Support */,
 				46F8BA26244CF835000207BB /* Info.plist */,
 				468099D9245041DB00F1D4B0 /* GoogleService-Info.plist */,
 			);
